@@ -4,8 +4,8 @@ metadata:
   name: efs-sc
 provisioner: efs.csi.aws.com
 parameters:
-  provisioningMode: efs-ap  # Add this parameter for EFS
-  fileSystemId: <your-efs-file-system-id>  # Replace with your actual EFS file system ID
+  provisioningMode: efs-ap  # Required for EFS
+  fileSystemId: fs-05b0878594b65b722  # Your EFS file system ID
   directoryPerms: "700"
 volumeBindingMode: Immediate
 
